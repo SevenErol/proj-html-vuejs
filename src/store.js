@@ -28,6 +28,29 @@ export const store = reactive({
             actions: ["Action one", "Action two"]
         }
     ],
+    nations: [
+        {
+            language: "en",
+            flagURL: "./assets/img/en.png",
+            extendedName: "English"
+        },
+        {
+            language: "de",
+            flagURL: "./assets/img/de.png",
+            extendedName: "Deutschland"
+        },
+        {
+            language: "fr",
+            flagURL: "./assets/img/fr.png",
+            extendedName: "France"
+        }
+
+    ],
+    selectLanguage: {
+        language: "en",
+        flagURL: "./assets/img/en.png",
+        extendedName: "English"
+    },
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }

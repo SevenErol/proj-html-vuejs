@@ -4,6 +4,7 @@ import { store } from "../store";
 
 import LogoImage from "./LogoImage.vue";
 import SingleNavEl from "./SingleNavEl.vue";
+import LanguageMenu from "./LanguageMenu.vue";
 export default {
     name: "AppHeader",
     data() {
@@ -13,7 +14,8 @@ export default {
     },
     components: {
         LogoImage,
-        SingleNavEl
+        SingleNavEl,
+        LanguageMenu
     }
 }
 
@@ -53,24 +55,8 @@ export default {
                 <div class="search_button col-4 d-flex align-items-center">
 
                     <div class="row">
-                        <div class="col-6 d-flex align-items-center">
-                            <img src="../assets/img/en.png" alt="" class="p-2">
-                            <span class="dropdown p-2">
-                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    English
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Deutschland</a></li>
-                                </ul>
-                            </span>
 
-                            <span>
-                                <font-awesome-icon icon="fa-solid fa-user" />
-                            </span>
-
-
-                        </div>
+                        <LanguageMenu />
 
                         <div class="col-6 d-flex align-items-center p-2">
                             <input type="text" class="searchbox me-2" placeholder="Search...">
