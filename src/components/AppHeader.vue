@@ -5,6 +5,7 @@ import { store } from "../store";
 import LogoImage from "./LogoImage.vue";
 import SingleNavEl from "./SingleNavEl.vue";
 import LanguageMenu from "./LanguageMenu.vue";
+import SearchSection from "./SearchSection.vue";
 export default {
     name: "AppHeader",
     data() {
@@ -15,7 +16,8 @@ export default {
     components: {
         LogoImage,
         SingleNavEl,
-        LanguageMenu
+        LanguageMenu,
+        SearchSection
     }
 }
 
@@ -58,10 +60,7 @@ export default {
 
                         <LanguageMenu />
 
-                        <div class="col-6 d-flex align-items-center p-2">
-                            <input type="text" class="searchbox me-2" placeholder="Search...">
-                            <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
-                        </div>
+                        <SearchSection />
 
                     </div>
 
