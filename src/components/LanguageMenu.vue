@@ -42,7 +42,7 @@ export default {
 
         </span>
 
-        <span>
+        <span class="user_icon">
             <font-awesome-icon icon="fa-solid fa-user" />
         </span>
 
