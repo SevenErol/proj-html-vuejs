@@ -1,0 +1,18 @@
+@use "variables" as *;
+
+#site_header {
+    background-color: $light;
+
+    nav {
+
+        li {
+
+            margin: 0rem 1rem;
+        }
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid $lightdark;
+    }
+}
