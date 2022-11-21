@@ -51,6 +51,13 @@ export const store = reactive({
         flagURL: "./assets/img/en.png",
         extendedName: "English"
     },
+    approach: [
+        {
+            title: "One to One",
+            description: "Getting the necessary clarity about the current state to help you improve your game",
+            component: "OneComponent"
+        }
+    ],
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }
