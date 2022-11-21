@@ -1,1 +1,11 @@
 @use "./partials/header";
+
+@use "./partials/banner";
+
+#site_banner {
+  .col-6 {
+    background-image: url("../img/home-business-hero-global-image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

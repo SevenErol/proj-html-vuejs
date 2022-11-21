@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+#site_banner {
+    background-color: $light;
+    padding: 2rem;
+
+    h4 {
+        color: $primary;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    button {
+        background-color: $jungle;
+        color: $light;
+        padding: 0.5rem 2rem;
+    }
+
+    .col-6 {
+        padding: 2rem;
+
+        img {
+            width: 80%;
+        }
+    }
+}

@@ -6,6 +6,7 @@ import LogoImage from "./LogoImage.vue";
 import SingleNavEl from "./SingleNavEl.vue";
 import LanguageMenu from "./LanguageMenu.vue";
 import SearchSection from "./SearchSection.vue";
+
 export default {
     name: "AppHeader",
     data() {
