@@ -6,6 +6,7 @@ import BusinessHero from './BusinessHero.vue';
 import ApproachCard from './ApproachCard.vue';
 import HelpCard from './HelpCard.vue';
 import OffersCard from './OffersCard.vue';
+import FaqComponent from './FaqComponent.vue';
 
 export default {
   name: "AppMain",
@@ -14,7 +15,8 @@ export default {
     BusinessHero,
     ApproachCard,
     HelpCard,
-    OffersCard
+    OffersCard,
+    FaqComponent
   },
   data() {
     return {
@@ -123,6 +125,36 @@ export default {
 
   <section id="youtube">
 
+    <div class="container position-relative">
+
+      <img src="../assets/img/maxcoach-shape-07.png" alt="" class="position-absolute bottom-0">
+
+      <div class="row align-items-center p-3">
+
+        <div class="col-6">
+
+          <div class="img_container position-relative">
+            <img :src="store.getImagePath(store.thumbYoutube)" alt="" class="img-fluid">
+            <img :src="store.getImagePath(store.iconYoutube)" alt=""
+              class="position-absolute top-50 start-50 translate-middle">
+          </div>
+
+        </div>
+
+        <div class="col-6 worldmap">
+
+          <div class="col-8">
+            <h2>To Thrive in Business Today, You will need a Good Plan </h2>
+
+            <div class="faq text-white">
+              <FaqComponent v-for="question in store.faq" :questions="question" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
 
   </section>
 

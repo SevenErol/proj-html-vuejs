@@ -133,6 +133,25 @@ export const store = reactive({
             description: "Academic Listening and Note-taking"
         }
     ],
+    faq: [
+        {
+            question: "How can we help?",
+            answer: "How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, the you have yet to understand How success comes.",
+            visible: true
+        },
+        {
+            question: "Why would i need a businness coach?",
+            answer: "How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, the you have yet to understand How success comes.",
+            visible: false
+        },
+        {
+            question: "What is one-on-one coaching?",
+            answer: "How many courses you have been on, using however many techniques and methods. Unless you have come to realize the value of mindset, the you have yet to understand How success comes.",
+            visible: false
+        }
+    ],
+    thumbYoutube: "./assets/img/home-business-video-poster-670x450.jpg",
+    iconYoutube: "./assets/img/icon-youtube-play.png",
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }

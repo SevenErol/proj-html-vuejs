@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+#youtube {
+    .border-bottom {
+        margin: 3rem 0;
+
+        h5:hover {
+            cursor: pointer;
+        }
+
+        .jungle {
+            color: $jungle;
+        }
+    }
+}
