@@ -91,7 +91,28 @@ export const store = reactive({
             component: ApproachSix
         }
     ],
+    helpCards: [
+        {
+            imageURL: "./assets/img/home-business-service-slide-01-480x298.jpg",
+            title: "Consultative Training",
+            paragraph: "With a coach addressing multiple issues that are off balance, affecting your business in various unconsidered ways.",
+            discover: "Discover more"
+        },
+        {
+            imageURL: "./assets/img/home-business-service-slide-02-480x298.jpg",
+            title: "Real Deal Coaching",
+            paragraph: "Bring an exceptionally powerful opportunity. Being able to accept, to work with that opportunity.",
+            discover: "Discover more"
+        },
+        {
+            imageURL: "./assets/img/home-business-service-slide-03-480x298.jpg",
+            title: "Advisor Training Program",
+            paragraph: "Getting high quality, entrepeneur mindset driven online business coaching, is what is needed.",
+            discover: "Discover more"
+        }
+    ],
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }
 })
+

@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+#help {
+    background-color: $light;
+
+    .dream {
+        color: $primary;
+    }
+
+    .card {
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $jungle;
+            font-weight: bold;
+        }
+    }
+
+
+}

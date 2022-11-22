@@ -4,13 +4,15 @@ import { store } from '../store';
 import GetStarted from './GetStarted.vue';
 import BusinessHero from './BusinessHero.vue';
 import ApproachCard from './ApproachCard.vue';
+import HelpCard from './HelpCard.vue';
 
 export default {
   name: "AppMain",
   components: {
     GetStarted,
     BusinessHero,
-    ApproachCard
+    ApproachCard,
+    HelpCard
   },
   data() {
     return {
@@ -66,6 +68,27 @@ export default {
 
       </div>
 
+
+    </div>
+  </section>
+
+  <section id="help">
+
+    <div class="container p-3">
+
+      <div class="titles p-3 text-center">
+
+        <h5 class="mb-3 dream">Let's Dream Big Together</h5>
+
+        <h1>Explore How can i help you</h1>
+
+      </div>
+
+      <div class="row">
+
+        <HelpCard v-for="help in store.helpCards" :help="help" />
+
+      </div>
 
     </div>
   </section>
