@@ -2,6 +2,8 @@
 
 @use "./partials/banner";
 
+@use "./partials/sectionDream";
+
 #site_banner {
   .col-6 {
     background-image: url("../img/home-business-hero-global-image.png");

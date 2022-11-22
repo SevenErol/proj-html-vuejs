@@ -1,0 +1,31 @@
+@use "variables" as *;
+
+#dream_together {
+
+    .dream {
+        color: $primary;
+    }
+
+    h4 {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .col-2 {
+        font-size: 36px;
+    }
+
+    .learn {
+        background-color: $light;
+        color: $primary;
+        border: 1px solid $primary;
+        margin: 2rem;
+        padding: 0.5rem 2rem;
+    }
+
+    .start {
+        background-color: $jungle;
+        color: $light;
+        padding: 0.5rem 2rem;
+    }
+}
