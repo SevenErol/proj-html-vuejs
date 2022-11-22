@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+#events {
+
+    padding: 2rem;
+
+    .ms_col {
+        margin-bottom: 2rem;
+        background-color: lightgray;
+        border-radius: 0.5rem;
+
+        h6 {
+            color: $silver;
+        }
+
+        h1 {
+            color: $primary;
+        }
+
+        .month {
+            color: $dark-text;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: $primary;
+            padding: 0.5rem 2rem;
+            color: $light;
+            font-weight: bold;
+        }
+    }
+
+    .all_events {
+        a {
+            text-decoration: none;
+            color: $primary;
+        }
+    }
+}

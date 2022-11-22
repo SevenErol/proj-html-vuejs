@@ -152,6 +152,56 @@ export const store = reactive({
     ],
     thumbYoutube: "./assets/img/home-business-video-poster-670x450.jpg",
     iconYoutube: "./assets/img/icon-youtube-play.png",
+    events: [
+        {
+            location: "Texas, US",
+            place: "StoryTelling Workshop",
+            date: {
+                day: "22",
+                month: "NOV"
+            }
+        },
+        {
+            location: "New York, US",
+            place: "Painting Art Contest 2020",
+            date: {
+                day: "10",
+                month: "OCT"
+            }
+        },
+        {
+            location: "Hamburg, Germany",
+            place: "International Art Fair 2020",
+            date: {
+                day: "23",
+                month: "NOV"
+            }
+        },
+        {
+            location: "Illinois, US",
+            place: "Street Performance: Call for Artist",
+            date: {
+                day: "15",
+                month: "DEC"
+            }
+        },
+        {
+            location: "Illinois, US",
+            place: "Consumer Food Safety Education Conference",
+            date: {
+                day: "22",
+                month: "JUL"
+            }
+        },
+        {
+            location: "Dubai",
+            place: "How meditation improve your mental health?",
+            date: {
+                day: "12",
+                month: "AUG"
+            }
+        }
+    ],
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }

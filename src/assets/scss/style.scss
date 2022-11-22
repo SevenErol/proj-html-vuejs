@@ -12,6 +12,8 @@
 
 @use "./partials/youtubeSection";
 
+@use "./partials/eventsSection";
+
 #site_banner {
   .col-6 {
     background-image: url("../img/home-business-hero-global-image.png");

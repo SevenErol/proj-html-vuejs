@@ -7,6 +7,7 @@ import ApproachCard from './ApproachCard.vue';
 import HelpCard from './HelpCard.vue';
 import OffersCard from './OffersCard.vue';
 import FaqComponent from './FaqComponent.vue';
+import SingleEvent from './SingleEvent.vue';
 
 export default {
   name: "AppMain",
@@ -16,7 +17,8 @@ export default {
     ApproachCard,
     HelpCard,
     OffersCard,
-    FaqComponent
+    FaqComponent,
+    SingleEvent
   },
   data() {
     return {
@@ -153,6 +155,32 @@ export default {
 
         </div>
       </div>
+
+    </div>
+
+  </section>
+
+  <section id="events">
+
+    <div class="container">
+
+      <div class="titles p-3 text-center">
+
+        <h5 class="mb-3 section_title">Wanna transform your life?</h5>
+
+        <h1>Upcoming events</h1>
+
+      </div>
+
+
+      <div class="row">
+
+        <SingleEvent v-for="event in store.events" :event="event" />
+
+      </div>
+
+      <p class="all_events text-center">Excited about our events? <a href="#"><strong>View all events
+            <span>&rightarrow;</span></strong></a></p>
 
     </div>
 
