@@ -6,6 +6,8 @@
 
 @use "./partials/sectionHelp";
 
+@use "./partials/offersSection";
+
 #site_banner {
   .col-6 {
     background-image: url("../img/home-business-hero-global-image.png");

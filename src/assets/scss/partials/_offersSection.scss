@@ -1,0 +1,35 @@
+@use "variables" as *;
+
+#offers {
+    padding: 1rem;
+
+    .dream {
+        color: $primary;
+    }
+
+    .price_offer {
+        padding: 1rem;
+        background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.1));
+
+        .price {
+            color: $jungle;
+            font-weight: bold;
+        }
+
+        .description {
+            color: $light;
+        }
+    }
+
+    .courses {
+        width: 50%;
+        margin: 3rem auto;
+
+
+        a {
+            color: $dark-text;
+            text-decoration: none;
+        }
+    }
+
+}

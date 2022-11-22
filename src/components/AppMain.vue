@@ -5,6 +5,7 @@ import GetStarted from './GetStarted.vue';
 import BusinessHero from './BusinessHero.vue';
 import ApproachCard from './ApproachCard.vue';
 import HelpCard from './HelpCard.vue';
+import OffersCard from './OffersCard.vue';
 
 export default {
   name: "AppMain",
@@ -12,7 +13,8 @@ export default {
     GetStarted,
     BusinessHero,
     ApproachCard,
-    HelpCard
+    HelpCard,
+    OffersCard
   },
   data() {
     return {
@@ -91,6 +93,37 @@ export default {
       </div>
 
     </div>
+
+  </section>
+
+  <section id="offers">
+
+    <div class="container p-3">
+
+      <div class="titles p-3 text-center">
+
+        <h5 class="mb-3 dream">Let's Dream Big Together</h5>
+
+        <h1>Explore How can i help you</h1>
+
+      </div>
+
+      <div class="row">
+
+        <OffersCard v-for="offer in store.offers" :offer="offer" />
+
+      </div>
+
+      <p class="courses text-center">Take the control of their life back and start doing things to make their dream
+        come true. <a href="#"><strong>View all courses <span>&rightarrow;</span></strong></a></p>
+
+    </div>
+
+  </section>
+
+  <section id="youtube">
+
+
   </section>
 
 </template>

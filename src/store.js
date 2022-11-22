@@ -111,6 +111,28 @@ export const store = reactive({
             discover: "Discover more"
         }
     ],
+    offers: [
+        {
+            imageURL: "./assets/img/course-02-443x600.jpg",
+            price: "$40.00",
+            description: "Learning to Write as a professional author"
+        },
+        {
+            imageURL: "./assets/img/stock-full-hd-03-443x600.jpg",
+            price: "Free",
+            description: "Customer-centric info-tech strategies"
+        },
+        {
+            imageURL: "./assets/img/stock-full-hd-04-443x600.jpg",
+            price: "$19.00",
+            description: "Open Programming Courses for Everyone: Python"
+        },
+        {
+            imageURL: "./assets/img/stock-full-hd-06-443x600.jpg",
+            price: "$26.00",
+            description: "Academic Listening and Note-taking"
+        }
+    ],
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }
