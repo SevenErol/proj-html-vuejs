@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+#subscribe {
+
+    #circle {
+        border: 8px solid #25ac938c;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .newsletter {
+        color: $primary;
+        font-style: italic;
+    }
+
+    .input-group {
+        button {
+            background-color: $jungle;
+            color: $light;
+            padding: 0.5rem 2rem;
+            font-weight: bold;
+        }
+    }
+
+
+}

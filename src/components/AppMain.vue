@@ -236,6 +236,49 @@ export default {
     </div>
   </section>
 
+  <section id="subscribe" class="p-3">
+
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-3 position-relative">
+
+          <div id="circle" class="position-absolute translate-middle top-50 start-50"></div>
+
+        </div>
+
+        <div class="col-6">
+
+          <div class="titles p-3 text-center">
+
+            <h1>Subscribe <span id="newsletter">Newsletter</span></h1>
+
+            <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+
+          </div>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Enter your email" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn" type="button" id="button-addon2">Subscribe</button>
+          </div>
+
+        </div>
+
+        <div class="col-3 position-relative semi_circle">
+
+          <img src="../assets/img/maxcoach-shape-02.png" alt=""
+            class="position-absolute translate-middle top-50 start-50">
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </section>
+
 </template>
 
 <style lang="scss" scoped>

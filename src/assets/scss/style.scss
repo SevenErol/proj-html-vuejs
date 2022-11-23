@@ -16,6 +16,8 @@
 
 @use "./partials/_reviewsSection.scss";
 
+@use "./partials/subscribeSection";
+
 
 #site_banner {
   .col-6 {
@@ -44,4 +46,14 @@
     }
   }
 
+}
+
+#subscribe {
+
+  .semi_circle {
+    background-image: url("../img/maxcoach-shape-09.png");
+    background-repeat: no-repeat;
+    background: size 5rem;
+    background-position: center;
+  }
 }
