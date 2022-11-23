@@ -11,10 +11,12 @@ export default {
 
 <template>
 
+    <!-- single column event card -->
     <div class="col-6">
 
         <div class="p-3 d-flex justify-content-between ms_col">
 
+            <!-- container for event location and place -->
             <div class="col-6">
                 <h6>
                     <span>
@@ -25,16 +27,19 @@ export default {
                 <h4>{{ event.place }}</h4>
             </div>
 
+            <!-- container for event day and month  -->
             <div class="col-4 text-center">
                 <h1>{{ event.date.day }}</h1>
+
                 <p class="month">{{ event.date.month }}</p>
+
+                <!-- button to buy ticket -->
                 <button type="button" class="btn">Get ticket</button>
+
             </div>
+
         </div>
 
-
     </div>
-
-
 
 </template>

@@ -28,8 +28,10 @@ export default {
 
         <div class="row">
 
+            <!-- component in column for language choice -->
             <LanguageMenu />
 
+            <!-- component in column to search in site -->
             <SearchSection />
 
         </div>
