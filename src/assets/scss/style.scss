@@ -20,6 +20,14 @@
 
 @use "./partials/footer";
 
+body {
+  background-color: $lightgrey;
+}
+
+.section_title {
+  color: $primary;
+}
+
 #site_banner {
   .col-6 {
     background-image: url("../img/home-business-hero-global-image.png");
