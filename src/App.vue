@@ -1,4 +1,6 @@
 <script>
+
+// import necessary components
 import AppHeader from "./components/AppHeader.vue"
 import AppMain from "./components/AppMain.vue"
 import AppFooter from "./components/AppFooter.vue"
@@ -15,10 +17,13 @@ export default {
 
 <template>
 
+  <!-- component header -->
   <AppHeader />
 
+  <!-- component main -->
   <AppMain />
 
+  <!-- component footer -->
   <AppFooter />
 
 </template>

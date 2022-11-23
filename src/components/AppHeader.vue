@@ -1,24 +1,17 @@
 <script>
 
-import { store } from "../store";
-
+// import necessary components
 import LogoImage from "./LogoImage.vue";
-import SingleNavEl from "./SingleNavEl.vue";
-import LanguageMenu from "./LanguageMenu.vue";
-import SearchSection from "./SearchSection.vue";
+import NavBar from "./NavBar.vue";
+import GroupSearch from "./GroupSearch.vue";
+
 
 export default {
     name: "AppHeader",
-    data() {
-        return {
-            store
-        }
-    },
     components: {
         LogoImage,
-        SingleNavEl,
-        LanguageMenu,
-        SearchSection
+        NavBar,
+        GroupSearch
     }
 }
 
@@ -26,51 +19,25 @@ export default {
 
 <template>
 
+    <!-- site header -->
     <header id="site_header">
 
         <div class="container-fluid">
 
             <div class="row">
 
+                <!-- logo image component in column -->
                 <LogoImage />
 
 
-                <div class="col-6">
+                <!-- navbar component in column -->
+                <NavBar />
 
-                    <nav class="navbar navbar-expand-lg">
-
-                        <div class="container-fluid">
-
-                            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
-
-                                <ul class="navbar-nav">
-                                    <SingleNavEl v-for="object in store.navigationVoices" :voice="object" />
-                                </ul>
-
-                            </div>
-
-                        </div>
-
-                    </nav>
-
-                </div>
-
-                <div class="search_button col-4 d-flex align-items-center">
-
-                    <div class="row">
-
-                        <LanguageMenu />
-
-                        <SearchSection />
-
-                    </div>
-
-
-                </div>
-
-
+                <!-- search and language group component in column -->
+                <GroupSearch />
 
             </div>
+
         </div>
 
     </header>

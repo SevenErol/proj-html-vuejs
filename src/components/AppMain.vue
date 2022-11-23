@@ -1,6 +1,6 @@
 <script>
-import { store } from '../store';
 
+// import necessary components
 import SectionBanner from './SectionBanner.vue';
 import SectionApproach from './SectionApproach.vue';
 import SectionHelp from './SectionHelp.vue';
