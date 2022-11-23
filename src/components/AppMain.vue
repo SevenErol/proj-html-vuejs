@@ -236,7 +236,7 @@ export default {
     </div>
   </section>
 
-  <section id="subscribe" class="p-3">
+  <section id="subscribe">
 
     <div class="container">
 

@@ -232,6 +232,25 @@ export const store = reactive({
             work: "/Multimedia Admin"
         }
     ],
+    infos: [
+        {
+            name: "Address",
+            list: ["382 NE 191st St #87394 Miami, FL 33179-3899", "+1(305) 547-9909 (9 AM - 5 PM EST, Monday - Friday)", "support@maxcoach.com"]
+        },
+        {
+            name: "Explore",
+            list: ["Start here", "Blog", "About Us"]
+        },
+        {
+            name: "Courses",
+            list: ["Success stories", "Courses", "Contact us"]
+        },
+        {
+            name: "Information",
+            list: ["Membership", "Purchase guide", "Privacy Policy", "Terms of Service"]
+        }
+    ],
+    copyright: "2020 Maxcoach, All Rights Reserved",
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }
