@@ -7,9 +7,18 @@
         color: $primary;
     }
 
+    .card {
+        &:hover .hidden_info {
+            display: inline-block;
+            transition: 1s;
+        }
+
+    }
+
     .price_offer {
         padding: 1rem;
         background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.1));
+
 
         .price {
             color: $jungle;
@@ -17,6 +26,11 @@
         }
 
         .description {
+            color: $light;
+        }
+
+        .hidden_info {
+            display: none;
             color: $light;
         }
     }

@@ -115,22 +115,34 @@ export const store = reactive({
         {
             imageURL: "./assets/img/course-02-443x600.jpg",
             price: "$40.00",
-            description: "Learning to Write as a professional author"
+            description: "Learning to Write as a professional author",
+            lessons: 20,
+            students: 50,
+            purpose: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and all kind of people."
         },
         {
             imageURL: "./assets/img/stock-full-hd-03-443x600.jpg",
             price: "Free",
-            description: "Customer-centric info-tech strategies"
+            description: "Customer-centric info-tech strategies",
+            lessons: 20,
+            students: 50,
+            purpose: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and all kind of people."
         },
         {
             imageURL: "./assets/img/stock-full-hd-04-443x600.jpg",
             price: "$19.00",
-            description: "Open Programming Courses for Everyone: Python"
+            description: "Open Programming Courses for Everyone: Python",
+            lessons: 20,
+            students: 50,
+            purpose: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and all kind of people."
         },
         {
             imageURL: "./assets/img/stock-full-hd-06-443x600.jpg",
             price: "$26.00",
-            description: "Academic Listening and Note-taking"
+            description: "Academic Listening and Note-taking",
+            lessons: 20,
+            students: 50,
+            purpose: "The purpose of this course is to provide the advanced writing techniques commonly used for inspiring readers and all kind of people."
         }
     ],
     faq: [
@@ -253,6 +265,13 @@ export const store = reactive({
     copyright: "2020 Maxcoach, All Rights Reserved",
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
+    },
+    cutParagraph(text) {
+        if (text.length < 100) {
+            return text
+        }
+
+        return text.substring(0, 100) + "..."
     }
 })
 

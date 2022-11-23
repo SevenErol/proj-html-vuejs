@@ -29,6 +29,21 @@ export default {
 
                 <h5 class="description">{{ offer.description }}</h5>
 
+                <div class="hidden_info">
+                    <div class="mb-3">
+                        <span class="lessons">
+                            <font-awesome-icon icon="fa-solid fa-file" /> {{ offer.lessons }} lessons
+                        </span>
+
+                        <span class="students">
+                            <font-awesome-icon icon="fa-solid fa-user" /> {{ offer.students }} students
+                        </span>
+
+                    </div>
+
+                    <p>{{ store.cutParagraph(offer.purpose) }}</p>
+                </div>
+
             </div>
 
         </div>
