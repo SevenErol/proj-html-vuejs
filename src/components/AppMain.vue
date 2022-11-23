@@ -1,8 +1,7 @@
 <script>
 import { store } from '../store';
 
-import GetStarted from './GetStarted.vue';
-import BusinessHero from './BusinessHero.vue';
+import SectionBanner from './SectionBanner.vue';
 import ApproachCard from './ApproachCard.vue';
 import HelpCard from './HelpCard.vue';
 import OffersCard from './OffersCard.vue';
@@ -13,8 +12,7 @@ import SingleReview from './SingleReview.vue';
 export default {
   name: "AppMain",
   components: {
-    GetStarted,
-    BusinessHero,
+    SectionBanner,
     ApproachCard,
     HelpCard,
     OffersCard,
@@ -33,21 +31,11 @@ export default {
 
 <template>
 
-  <section id="site_banner">
+  <!-- component section site banner -->
 
-    <div class="container banner">
+  <SectionBanner />
 
-      <div class="row align-items-center justify-content-between">
 
-        <GetStarted />
-
-        <BusinessHero />
-
-      </div>
-
-    </div>
-
-  </section>
 
   <section id="dream_together" class="p-3">
 
