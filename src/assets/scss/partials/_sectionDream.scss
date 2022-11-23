@@ -21,11 +21,23 @@
         border: 1px solid $primary;
         margin: 2rem;
         padding: 0.5rem 2rem;
+
+        &:hover {
+            border: 1px solid $start;
+            background-color: $start;
+            transition: 0.4s;
+            color: $light;
+        }
     }
 
     .start {
         background-color: $jungle;
         color: $light;
         padding: 0.5rem 2rem;
+
+        &:hover {
+            background-color: $start;
+            transition: 0.4s;
+        }
     }
 }

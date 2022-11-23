@@ -16,6 +16,11 @@
         background-color: $jungle;
         color: $light;
         padding: 0.5rem 2rem;
+
+        &:hover {
+            background-color: $start;
+            transition: 0.4s;
+        }
     }
 
     .col-6 {

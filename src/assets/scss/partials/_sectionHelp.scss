@@ -16,6 +16,13 @@
             text-decoration: none;
             color: $jungle;
             font-weight: bold;
+            padding: 1rem;
+
+            &:hover {
+                background-color: $jungle;
+                transition: 0.4s;
+                color: $light;
+            }
         }
     }
 
