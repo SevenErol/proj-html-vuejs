@@ -8,6 +8,7 @@ import HelpCard from './HelpCard.vue';
 import OffersCard from './OffersCard.vue';
 import FaqComponent from './FaqComponent.vue';
 import SingleEvent from './SingleEvent.vue';
+import SingleReview from './SingleReview.vue';
 
 export default {
   name: "AppMain",
@@ -18,7 +19,8 @@ export default {
     HelpCard,
     OffersCard,
     FaqComponent,
-    SingleEvent
+    SingleEvent,
+    SingleReview
   },
   data() {
     return {
@@ -184,6 +186,54 @@ export default {
 
     </div>
 
+  </section>
+
+  <section id="reviews" class="p-3">
+
+    <div class="container">
+
+      <div class="titles p-3 text-center">
+
+        <h5 class="mb-3 section_title">People are praising MaxCoach</h5>
+
+        <h1>What make they love us?</h1>
+
+      </div>
+
+      <div class="row justify-content-center p-3">
+
+        <div class="col-6">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <SingleReview v-for="(review, index) in store.reviews" :review="review" :index="index" />
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </section>
 
 </template>

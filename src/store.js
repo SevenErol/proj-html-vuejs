@@ -202,6 +202,36 @@ export const store = reactive({
             }
         }
     ],
+    reviews: [
+        {
+            disclaimer: "High level of efficiency and scientific teaching methods",
+            review: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+            avatar: "./assets/img/testimonial-avata-02.jpg",
+            name: "MINA HOLLACE",
+            work: "/freelance"
+        },
+        {
+            disclaimer: "High level of efficiency and scientific teaching methods",
+            review: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+            avatar: "./assets/img/testimonial-avata-04.jpg",
+            name: "MADLEY PONDOR",
+            work: "/IT specialist"
+        },
+        {
+            disclaimer: "High level of efficiency and scientific teaching methods",
+            review: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+            avatar: "./assets/img/testimonial-avata-01.jpg",
+            name: "MINA HOLLACE",
+            work: "/freelance"
+        },
+        {
+            disclaimer: "High level of efficiency and scientific teaching methods",
+            review: "I am free to learn at my own pace, follow my own schedule and choose the subject i want to learn from the syllabus. Great study portal for people like me.",
+            avatar: "./assets/img/testimonial-avata-03.jpg",
+            name: "FLORENCE THEMES",
+            work: "/Multimedia Admin"
+        }
+    ],
     getImagePath(imgPath) {
         return new URL(imgPath, import.meta.url).href;
     }

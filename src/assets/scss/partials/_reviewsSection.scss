@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+#reviews {
+
+    background-color: $silver;
+
+    .section_title {
+        color: $primary;
+    }
+
+    img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+    }
+}
