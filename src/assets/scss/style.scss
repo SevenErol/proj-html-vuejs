@@ -1,5 +1,7 @@
+// import use of variables with $ sign
 @use "./partials/variables" as *;
 
+// import every section stylesheet
 @use "./partials/header";
 
 @use "./partials/banner";
@@ -20,6 +22,8 @@
 
 @use "./partials/footer";
 
+
+// general scss rules
 body {
   background-color: $lightgrey;
 }
@@ -27,6 +31,8 @@ body {
 .section_title {
   color: $primary;
 }
+
+// scss rules for section with background image
 
 #site_banner {
   .col-6 {
