@@ -20,7 +20,7 @@ export default {
 
 <template>
 
-    <section id="site_footer">
+    <footer id="site_footer" class="position-relative">
 
         <div class="container">
 
@@ -34,7 +34,11 @@ export default {
 
         </div>
 
-    </section>
+        <div id="arrow" class="position-absolute bottom-0 end-0 d-flex justify-content-center align-items-center">
+            <a href="#">&UpArrow;</a>
+        </div>
+
+    </footer>
 
 </template>
 

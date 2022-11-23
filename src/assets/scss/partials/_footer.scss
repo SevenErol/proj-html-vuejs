@@ -24,4 +24,18 @@
         color: $silver;
         margin-top: 2rem;
     }
+
+    #arrow {
+        height: 72px;
+        width: 72px;
+        border-radius: 50%;
+        background-color: $jungle;
+        color: $light;
+
+        a {
+            text-decoration: none;
+            font-size: 36px;
+            color: $light;
+        }
+    }
 }

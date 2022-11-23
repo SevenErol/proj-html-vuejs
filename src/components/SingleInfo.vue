@@ -11,6 +11,6 @@ export default {
 
 <template>
 
-    <p><a>{{ phrase }}</a></p>
+    <p><a href="#">{{ phrase }}</a></p>
 
 </template>
